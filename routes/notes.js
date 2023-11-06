@@ -11,6 +11,7 @@ notes.get("/", (req, res) => {
   readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
+// handling new user posts, the reading and appending to the JSON file
 notes.post("/", (req, res) => {
   console.info(`${req.method} request received to add a note`);
 
@@ -37,6 +38,7 @@ notes.delete("/:id", (req, res) => {
 
   const requestedId = req.params.id.toLowerCase();
 
+  // reading the file, finding the correct note and then splicing it and rewriting the json
   readFromFile("./db/db.json").then((data) => {
     if (requestedId) {
       let notes = JSON.parse(data);
