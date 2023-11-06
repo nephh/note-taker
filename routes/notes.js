@@ -42,7 +42,7 @@ notes.delete("/:id", (req, res) => {
       let notes = JSON.parse(data);
       for (let i = 0; i < notes.length; ++i) {
         if (requestedId === notes[i].id) {
-          notes.splice(notes[i], 1);
+          notes.splice(i, 1);
 
           writeToFile("./db/db.json", notes);
           res.json("Success deleting note.");
