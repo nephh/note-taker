@@ -15,7 +15,13 @@ Web app to take and save notes.
 
 ## Usage
 
-This is a simple web app that will allow you to take some notes and save them, delete them, etc. Head [here](https://warm-bastion-37105-09054febf8f1.herokuapp.com/) and click the get started button to bring up the editor! Once you start writing your note, you will be able to save it and it will appear on the left. From the side menu you can view your other notes and delete them as well.
+This is a simple web app that will allow you to take some notes and save them, delete them, etc. 
+
+Head [here](https://warm-bastion-37105-09054febf8f1.herokuapp.com/) and click the get started button to bring up the editor! Once you start writing your note, you will be able to save it and it will appear on the left. From the side menu you can view your other notes and delete them as well.
+
+### Demo
+
+![demo](./assets/demo.gif)
 
 ## Credits
 
